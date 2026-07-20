@@ -1,0 +1,122 @@
+<style>
+  .wisehub-ems-features {
+    --wh-ink: #102033;
+    --wh-blue: #0d6efd;
+    --wh-cyan: #0dcaf0;
+    --wh-muted: #526c83;
+    color: var(--wh-ink);
+    font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+    overflow: hidden;
+    background: linear-gradient(180deg, #ffffff 0%, #edf8ff 100%);
+    padding: 28px 32px 64px;
+  }
+  .wisehub-ems-features * { box-sizing: border-box; }
+  .wisehub-ems-features .ems-feature {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, .65fr);
+    gap: clamp(36px, 5vw, 80px);
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: clamp(22px, 2.5vw, 40px);
+    border: 1px solid rgba(13, 110, 253, .12);
+    border-radius: 28px;
+    background: rgba(255, 255, 255, .84);
+    box-shadow: 0 22px 52px rgba(20, 92, 153, .10);
+  }
+  .wisehub-ems-features .ems-feature + .ems-feature { margin-top: clamp(24px, 3vw, 44px); }
+  .wisehub-ems-features .ems-feature:nth-child(even) { background: rgba(235, 248, 255, .88); }
+  .wisehub-ems-features .feature-visual {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: auto !important;
+    overflow: visible !important;
+    line-height: 0;
+    background: transparent !important;
+  }
+  .wisehub-ems-features .feature-visual img {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    aspect-ratio: auto !important;
+    object-fit: unset !important;
+    background: transparent !important;
+    border-radius: 20px;
+    box-shadow: 0 18px 36px rgba(24, 91, 143, .18);
+  }
+  .wisehub-ems-features .feature-kicker {
+    display: flex; align-items: center; gap: 10px;
+    margin: 0 0 14px; color: #087ea4; font-size: 13px;
+    font-weight: 800; letter-spacing: .12em;
+  }
+  .wisehub-ems-features .feature-kicker::before { content: ""; width: 34px; height: 2px; background: var(--wh-cyan); }
+  .wisehub-ems-features h2 { margin: 0; color: var(--wh-ink); font-size: clamp(29px, 3vw, 46px); line-height: 1.24; letter-spacing: .02em; }
+  .wisehub-ems-features .feature-lead { margin: 18px 0 0; color: #087ea4; font-size: clamp(18px, 1.45vw, 22px); font-weight: 800; line-height: 1.6; }
+  .wisehub-ems-features .feature-copy { margin: 22px 0 0; color: var(--wh-muted); font-size: 16px; line-height: 1.9; }
+  .wisehub-ems-features .feature-copy p { margin: 0 0 13px; }
+  .wisehub-ems-features .feature-points { display: grid; gap: 10px; margin: 24px 0 0; padding: 0; list-style: none; }
+  .wisehub-ems-features .feature-points li { position: relative; padding: 13px 16px 13px 36px; border: 1px solid rgba(13, 110, 253, .16); border-radius: 12px; background: rgba(248, 252, 255, .92); color: #426078; font-size: 15px; line-height: 1.65; }
+  .wisehub-ems-features .feature-points li::before { content: ""; position: absolute; left: 16px; top: 23px; width: 8px; height: 8px; border-radius: 50%; background: var(--wh-cyan); box-shadow: 0 0 0 6px rgba(13, 202, 240, .13); }
+  .wisehub-ems-features .feature-points strong { color: var(--wh-blue); }
+  @media (max-width: 760px) {
+    .wisehub-ems-features { padding: 18px 16px 40px; }
+    .wisehub-ems-features .ems-feature { grid-template-columns: 1fr; gap: 30px; padding: 24px; border-radius: 20px; }
+    .wisehub-ems-features .feature-visual img { border-radius: 16px; }
+  }
+</style>
+
+<section class="wisehub-ems-features" aria-label="WISEHUB EMS 系統特色功能">
+  <article class="ems-feature feature-ai-assistant">
+    <div class="feature-visual"><img src="https://raw.githubusercontent.com/tradercodex66-sketch/public-images/main/codex-clipboard-03b129eb-900f-45f6-80fc-162e734856ab.png" alt="AI 智慧助手分析警報並提出處置建議"></div>
+    <div class="feature-content"><p class="feature-kicker">01 / INTELLIGENT RESPONSE</p><h2>AI 智慧助手｜讓每一次警報，都有下一步</h2><p class="feature-lead">不只是通知異常，更協助團隊找到原因與處置方向。</p><div class="feature-copy"><p>凌晨 2:17，冰水主機的需量突然攀升，控制室跳出警報。以往，值班人員得在多張趨勢圖、設備紀錄與現場狀況之間反覆比對；現在，WISEHUB EMS 的 AI 智慧助手會即時讀取警報脈絡，找出可能原因，並把優先處置建議直接帶到眼前。</p><p>它不只是通知「哪裡異常」，更協助回答「為什麼發生」與「下一步該怎麼做」，讓團隊在關鍵時刻更快做出正確決策。</p></div><ul class="feature-points"><li><strong>即時解析：</strong>串聯警報、歷史趨勢與設備狀態，快速縮小可能原因。</li><li><strong>行動建議：</strong>依異常情境提供優先檢查項目與改善方向。</li><li><strong>經驗累積：</strong>將每一次處置轉化為可追溯的管理知識，降低人員交接與判讀門檻。</li></ul></div>
+  </article>
+
+  <article class="ems-feature feature-demand">
+    <div class="feature-visual"><img src="https://raw.githubusercontent.com/tradercodex66-sketch/public-images/main/codex-clipboard-37e9b173-4f08-4b81-a304-f2a92f080471.png" alt="需量預測與需量控制"></div>
+    <div class="feature-content"><p class="feature-kicker">02 / DEMAND FORESIGHT</p><h2>需量預測與需量控制</h2><p class="feature-lead">在尖峰來臨前，先把風險看清楚、安排好。</p><div class="feature-copy"><p>下午 2 點，製程設備陸續啟動，廠區用電正快速接近契約容量。WISEHUB EMS 持續讀取即時負載、歷史曲線與設備運轉狀態，預測下一個高峰可能何時發生、將升至多少。</p><p>當系統發現超約風險，會提前提出建議，並依現場優先順序分級啟動控制策略，守住用電邊界，也兼顧生產穩定。</p></div><ul class="feature-points"><li><strong>需量預測：</strong>提前掌握未來負載走勢與超約風險，從事後追查改為事前準備。</li><li><strong>合約優化：</strong>以實際需量資料檢視契約容量與基本電費，找到更合適的用電配置。</li><li><strong>分級控制：</strong>依現場優先序執行降載、設備微調、儲能／備援切換，降低尖峰衝擊。</li></ul></div>
+  </article>
+
+  <article class="ems-feature feature-dashboard">
+    <div class="feature-visual"><img src="https://raw.githubusercontent.com/tradercodex66-sketch/public-images/main/codex-clipboard-9d3703c8-2bb3-4e9d-b293-b420dc31b723.png" alt="自定義能源儀表板"></div>
+    <div class="feature-content"><p class="feature-kicker">03 / YOUR ENERGY VIEW</p><h2>自定義儀表板</h2><p class="feature-lead">每個角色，都該看見最需要的能源畫面。</p><div class="feature-copy"><p>廠務主管在意全場用電與尖峰風險；製程主管想先看到產線與區域的耗能變化；永續人員則需要追蹤碳排與電費。固定報表常讓關鍵資訊被淹沒在不相關的數字裡。</p><p>WISEHUB EMS 讓使用者依工作角色與管理情境，自由拖拉、排列與保留真正需要的資訊元件；一個儀表板，就是一套貼近現場決策節奏的能源視角。</p></div><ul class="feature-points"><li><strong>自由配置：</strong>依職務與場域，任意拖拉、排序、縮放圖表與數據元件。</li><li><strong>關鍵資訊優先：</strong>全場用電、區域狀態、碳排與電費，都能放在最適合的位置。</li><li><strong>一眼掌握全局：</strong>減少在多個報表間切換，把每天最重要的管理判斷留在同一個畫面。</li></ul></div>
+  </article>
+
+  <article class="ems-feature feature-virtual">
+    <div class="feature-visual"><img src="https://raw.githubusercontent.com/tradercodex66-sketch/public-images/main/codex-clipboard-1ccfd4b1-6500-4393-b200-c0c186edff8e.png" alt="虛擬設備與計算點位"></div>
+    <div class="feature-content"><p class="feature-kicker">04 / VIRTUALIZED INSIGHT</p><h2>虛擬設備與計算點位｜讓看不見的用電，也成為可管理的數據</h2><div class="feature-copy"><p>一台主設備底下往往串著多個模組，現場未必每一個環節都已裝表，卻都會影響能源成本與製程效率。若只能看到總表數字，工程師往往得花大量時間交叉比對。</p><p>WISEHUB EMS 可依既有量測資料建立「虛擬設備」與「計算點位」，將未直接量測的能耗、效率或碳排，透過可設定公式即時推算出來。</p></div><ul class="feature-points"><li><strong>虛擬設備建模：</strong>以既有電表與設備關係，補足未裝表環節的能源輪廓。</li><li><strong>彈性公式計算：</strong>依管理需求建立用電、效率、碳排或分攤等計算點位。</li><li><strong>數據持續更新：</strong>隨即時資料同步演算，讓分析、改善與追蹤都有可靠依據。</li></ul></div>
+  </article>
+
+  <article class="ems-feature feature-cost">
+    <div class="feature-visual"><img src="https://raw.githubusercontent.com/tradercodex66-sketch/public-images/main/codex-clipboard-87364880-d362-4e85-a479-a878ebd6803b.png" alt="三段式電費成本精算"></div>
+    <div class="feature-content"><p class="feature-kicker">05 / TIME-OF-USE COSTING</p><h2>三段式電費成本精算｜電價變動了，管理規則也能即時跟上</h2><div class="feature-copy"><p>台電調整電價，或企業的契約與排程改變時，真正棘手的往往不是看到新費率，而是重新判斷哪些時段的生產成本受到影響、哪些設備應該避開尖峰。</p><p>WISEHUB EMS 可依最新電價制度與企業實際契約，自行調整尖峰、半尖峰與離峰的計費時段與費率規則，協助團隊及早安排設備運轉。</p></div><ul class="feature-points"><li><strong>彈性費率設定：</strong>可隨台電電價與企業契約調整三段式計費規則，不受固定價格綁定。</li><li><strong>時段成本拆解：</strong>清楚比對尖峰、半尖峰與離峰的用電量與成本差異。</li><li><strong>調度決策依據：</strong>找出高成本時段與設備，讓排程、轉移負載與節能策略更有方向。</li></ul></div>
+  </article>
+
+  <article class="ems-feature feature-iso">
+    <div class="feature-visual"><img src="https://raw.githubusercontent.com/tradercodex66-sketch/public-images/main/codex-clipboard-a63cd3ef-6389-4510-81f1-f24814a509bb.png" alt="ISO 50001 PDCA 與 EnPI 能源績效管理"></div>
+    <div class="feature-content"><p class="feature-kicker">06 / CONTINUOUS IMPROVEMENT</p><h2>ISO 50001、PDCA 與 EnPI 能源績效管理｜把節能工作，變成可追蹤的持續改善</h2><div class="feature-copy"><p>節能不是做完一項改善就結束。當冰機調整、設備排程優化或照明汰換完成後，管理團隊最需要知道的是：成效是否真的發生，以及下一輪該從哪裡著手。</p><p>WISEHUB EMS 以 ISO 50001 的 PDCA 管理邏輯，將目標設定、行動執行、績效查核與改善修正串成完整循環。</p></div><ul class="feature-points"><li><strong>PDCA 持續改善：</strong>從計畫、執行、檢查到行動，建立可持續運作的能源管理流程。</li><li><strong>EnPI 績效指標：</strong>依產量、設備效率或用能情境設定指標，量化節能成果。</li><li><strong>基線比對與查核：</strong>保留改善前後的數據紀錄，讓內部管理與 ISO 50001 查核更有依據。</li></ul></div>
+  </article>
+
+  <article class="ems-feature feature-efficiency">
+    <div class="feature-visual"><img src="https://raw.githubusercontent.com/tradercodex66-sketch/public-images/main/codex-clipboard-febcb24a-9460-4ad2-a0e4-48a88577863e.png" alt="設備能效與全廠用電比例分析"></div>
+    <div class="feature-content"><p class="feature-kicker">07 / ENERGY HOTSPOTS</p><h2>設備能效與全廠用電比例分析｜找出耗能熱點，讓改善更精準</h2><div class="feature-copy"><p>同樣是用電增加，原因可能完全不同：冰水主機負載升高、水泵長時間運轉，或某個區域的用電比例突然異常。若只看到全廠總用電，很難判斷問題究竟出在哪裡。</p><p>WISEHUB EMS 將設備用電、負載與效率表現整合在同一個分析畫面中，並同步呈現全廠與各場域的用電比例。</p></div><ul class="feature-points"><li><strong>設備能效分析：</strong>整合設備用電、負載與效率值，掌握運轉表現是否偏離正常範圍。</li><li><strong>全廠用電比例：</strong>以圓餅圖與比例表拆解各系統、區域的用電占比，清楚掌握每一度電的去向。</li><li><strong>高耗能熱點辨識：</strong>快速鎖定異常或占比偏高的場域，作為設備調整、現場巡檢與節能改善的優先依據。</li></ul></div>
+  </article>
+
+  <article class="ems-feature feature-ha">
+    <div class="feature-visual"><img src="https://raw.githubusercontent.com/tradercodex66-sketch/public-images/main/codex-clipboard-65acdd6c-936a-47ad-b100-8d8b64998bcd.png" alt="高可用 HA 備援架構"></div>
+    <div class="feature-content"><p class="feature-kicker">08 / HIGH AVAILABILITY</p><h2>高可用 HA 備援架構｜主機異常時，能源管理不中斷</h2><div class="feature-copy"><p>能源管理系統承載的不只是畫面上的數字，還包括即時監控、警報通知、歷史資料與現場決策。若主機故障造成服務中斷，管理團隊可能在最需要掌握狀況的時刻，失去關鍵資訊。</p><p>WISEHUB EMS 採用高可用 HA 備援架構，讓主系統與備援系統持續同步資料與服務狀態；主機異常時，自動切換至備援主機。</p></div><ul class="feature-points"><li><strong>雙機即時同步：</strong>主、備系統持續同步重要資料與服務狀態，避免資料斷鏈。</li><li><strong>智慧故障切換：</strong>偵測主機異常後，自動將服務導向備援系統，縮短中斷時間。</li><li><strong>穩定持續運作：</strong>降低單點故障風險，讓能源監控與管理決策保持不中斷。</li></ul></div>
+  </article>
+
+  <article class="ems-feature feature-alerts">
+    <div class="feature-visual"><img src="https://raw.githubusercontent.com/tradercodex66-sketch/public-images/main/codex-clipboard-612a41be-4752-4e40-9b91-66c06e9a3021.png" alt="即時警報監控與多通路通知"></div>
+    <div class="feature-content"><p class="feature-kicker">09 / ALERTS THAT REACH YOU</p><h2>即時警報監控與多通路通知｜異常發生時，關鍵人員第一時間收到訊息</h2><p class="feature-lead">讓設備、用電與系統異常，不只停留在系統畫面裡。</p><div class="feature-copy"><p>設備異常往往不會等到管理人員坐在電腦前才發生。當需量突然升高、設備數值超過門檻，或運轉狀態出現偏差，若訊息只停留在系統畫面裡，處置時機就可能被錯過。</p><p>WISEHUB EMS 會持續監控關鍵設備與能源數據，依設定門檻即時產生警報事件。除了在系統中集中呈現警報狀態與處理歷程，也可透過簡訊與 E-mail 等通路通知指定人員，讓值班、廠務與管理團隊能更快掌握狀況、分工應變。</p></div><ul class="feature-points"><li><strong>即時警報看板：</strong>集中呈現設備、用電與系統異常，快速掌握事件優先順序。</li><li><strong>彈性門檻設定：</strong>依設備特性與管理需求，自訂警報條件與觸發規則。</li><li><strong>多通路主動通知：</strong>透過系統、簡訊與 E-mail 將重要異常即時送達負責人員。</li></ul></div>
+  </article>
+
+  <article class="ems-feature feature-renewable">
+    <div class="feature-visual"><img src="https://raw.githubusercontent.com/tradercodex66-sketch/public-images/main/codex-clipboard-5bebd563-484e-43b4-b42f-e5628a0699a2.png" alt="再生能源監控與綠電利用分析"></div>
+    <div class="feature-content"><p class="feature-kicker">10 / RENEWABLE ENERGY INSIGHT</p><h2>再生能源監控與綠電利用分析｜看清每一度綠電，讓永續投入發揮效益</h2><p class="feature-lead">從發電量到使用比例，清楚掌握綠電真正創造的效益。</p><div class="feature-copy"><p>當太陽能系統持續發電，企業最關心的不只是「今天發了多少電」，而是這些綠電實際供應了多少用電需求、是否被充分使用，以及還有哪些時段可以再提升自用比例。</p><p>WISEHUB EMS 整合全廠用電與再生能源資料，持續追蹤太陽能、風力、水力或沼氣等綠能來源的供應狀態與使用占比。透過發電、耗電與綠電利用率的交叉分析，管理者可掌握能源結構變化，找出提升綠電自用與節能效益的機會。</p></div><ul class="feature-points"><li><strong>綠電即時監控：</strong>掌握再生能源發電量、供應狀態與設備運轉表現。</li><li><strong>用電結構分析：</strong>比對全廠耗電與綠電占比，清楚了解能源來源分布。</li><li><strong>利用率優化：</strong>找出綠電未被充分運用的時段與場域，提升自用效益、支援永續目標。</li></ul></div>
+  </article>
+</section>
