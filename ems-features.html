@@ -37,7 +37,8 @@
     line-height: 0;
     background: transparent !important;
   }
-  .wisehub-ems-features .feature-visual::after { content: attr(data-title); position: absolute; top: 18px; left: 18px; right: 18px; padding: 13px 17px; border-left: 4px solid #25d3ef; border-radius: 10px; background: linear-gradient(90deg, rgba(5, 35, 70, .88), rgba(5, 35, 70, .56) 72%, transparent); color: #fff; font-size: clamp(21px, 2.05vw, 34px); font-weight: 800; line-height: 1.35; letter-spacing: .02em; text-shadow: 0 2px 8px rgba(0, 0, 0, .4); z-index: 1; }
+  .wisehub-ems-features .feature-visual::before { content: attr(data-title); display: block; margin: 0 0 18px; color: var(--wh-ink); font-size: clamp(27px, 2.25vw, 38px); font-weight: 800; line-height: 1.3; letter-spacing: .02em; }
+  .wisehub-ems-features .feature-visual::after { display: none; }
   .wisehub-ems-features .feature-visual img {
     display: block !important;
     width: 100% !important;
@@ -55,6 +56,18 @@
     margin: 0 0 14px; color: #087ea4; font-size: 13px;
     font-weight: 800; letter-spacing: .12em;
   }
+  .wisehub-ems-features .feature-kicker { font-size: 0; }
+  .wisehub-ems-features .feature-kicker::after { font-size: 13px; }
+  .wisehub-ems-features .ems-feature:nth-child(1) .feature-kicker::after { content: "01 / 智慧回應"; }
+  .wisehub-ems-features .ems-feature:nth-child(2) .feature-kicker::after { content: "02 / 尖峰預判"; }
+  .wisehub-ems-features .ems-feature:nth-child(3) .feature-kicker::after { content: "03 / 專屬視角"; }
+  .wisehub-ems-features .ems-feature:nth-child(4) .feature-kicker::after { content: "04 / 數據建模"; }
+  .wisehub-ems-features .ems-feature:nth-child(5) .feature-kicker::after { content: "05 / 成本精算"; }
+  .wisehub-ems-features .ems-feature:nth-child(6) .feature-kicker::after { content: "06 / 持續改善"; }
+  .wisehub-ems-features .ems-feature:nth-child(7) .feature-kicker::after { content: "07 / 耗能熱點"; }
+  .wisehub-ems-features .ems-feature:nth-child(8) .feature-kicker::after { content: "08 / 穩定備援"; }
+  .wisehub-ems-features .ems-feature:nth-child(9) .feature-kicker::after { content: "09 / 即時警報"; }
+  .wisehub-ems-features .ems-feature:nth-child(10) .feature-kicker::after { content: "10 / 綠電洞察"; }
   .wisehub-ems-features .feature-kicker::before { content: ""; width: 34px; height: 2px; background: var(--wh-cyan); }
   .wisehub-ems-features h2 { display: none !important; }
   .wisehub-ems-features .feature-lead { margin: 18px 0 0; color: #087ea4; font-size: clamp(18px, 1.45vw, 22px); font-weight: 800; line-height: 1.6; }
@@ -68,7 +81,7 @@
     .wisehub-ems-features { padding: 18px 16px 40px; }
     .wisehub-ems-features .ems-feature { grid-template-columns: 1fr; gap: 30px; padding: 24px; border-radius: 20px; }
     .wisehub-ems-features .feature-visual img { border-radius: 16px; }
-    .wisehub-ems-features .feature-visual::after { top: 12px; left: 12px; right: 12px; padding: 10px 13px; font-size: 21px; }
+    .wisehub-ems-features .feature-visual::before { margin-bottom: 13px; font-size: 27px; }
   }
 </style>
 
