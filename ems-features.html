@@ -12,19 +12,22 @@
   }
   .wisehub-ems-features * { box-sizing: border-box; }
   .wisehub-ems-features .features-hero {
-    max-width: 1440px;
-    margin: 0 auto clamp(24px, 3vw, 44px);
-    padding: clamp(42px, 5vw, 68px) clamp(24px, 6vw, 84px);
-    text-align: center;
-    border: 1px solid rgba(255, 255, 255, .28);
-    border-radius: 28px;
-    background: linear-gradient(135deg, #0d6efd 0%, #087ea4 100%);
-    box-shadow: 0 18px 42px rgba(13, 110, 253, .20);
+    display: flex;
+    align-items: center;
+    min-height: clamp(480px, 46vw, 640px);
+    margin: -28px -32px clamp(32px, 4vw, 56px);
+    border: 0;
+    border-radius: 0;
+    background-image: linear-gradient(90deg, rgba(8, 88, 211, .96) 0%, rgba(8, 86, 198, .90) 52%, rgba(5, 45, 112, .84) 100%), url("https://raw.githubusercontent.com/tradercodex66-sketch/public-images/main/codex-clipboard-37e9b173-4f08-4b81-a304-f2a92f080471.png");
+    background-position: center;
+    background-size: cover;
+    box-shadow: none;
   }
-  .wisehub-ems-features .features-hero__eyebrow { margin: 0 0 12px; color: #c8f4ff; font-size: 14px; font-weight: 800; letter-spacing: .14em; }
-  .wisehub-ems-features .features-hero h1 { display: block !important; margin: 0; color: #fff; font-size: clamp(34px, 4.1vw, 56px); font-weight: 800; line-height: 1.22; letter-spacing: .02em; }
-  .wisehub-ems-features .features-hero__subtitle { margin: 18px auto 0; color: #d8f8ff; font-size: clamp(19px, 2vw, 26px); font-weight: 800; line-height: 1.55; }
-  .wisehub-ems-features .features-hero__description { max-width: 680px; margin: 18px auto 0; color: rgba(255,255,255,.86); font-size: 16px; line-height: 1.85; }
+  .wisehub-ems-features .features-hero__content { width: min(1260px, 100%); margin: 0 auto; padding: clamp(48px, 7vw, 92px) clamp(32px, 6vw, 96px); text-align: left; }
+  .wisehub-ems-features .features-hero__eyebrow { display: inline-block; margin: 0 0 26px; padding: 10px 18px; border: 1px solid rgba(255,255,255,.42); border-radius: 999px; background: rgba(11, 76, 174, .22); color: #fff; font-size: 16px; font-weight: 800; letter-spacing: .04em; }
+  .wisehub-ems-features .features-hero h1 { display: block !important; max-width: 1120px; margin: 0; color: #fff; font-size: clamp(48px, 6.1vw, 82px); font-weight: 800; line-height: 1.2; letter-spacing: .01em; }
+  .wisehub-ems-features .features-hero__subtitle { max-width: 960px; margin: 26px 0 0; color: #fff; font-size: clamp(23px, 2.25vw, 31px); font-weight: 500; line-height: 1.55; }
+  .wisehub-ems-features .features-hero__description { max-width: 920px; margin: 34px 0 0; color: rgba(255,255,255,.92); font-size: clamp(18px, 1.55vw, 23px); line-height: 1.8; }
   .wisehub-ems-features .ems-feature {
     display: grid;
     grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
@@ -103,7 +106,12 @@
   .wisehub-ems-features .feature-points strong { color: var(--wh-blue); }
   @media (max-width: 760px) {
     .wisehub-ems-features { padding: 18px 16px 40px; }
-    .wisehub-ems-features .features-hero { padding: 38px 22px; border-radius: 20px; }
+    .wisehub-ems-features .features-hero { min-height: 470px; margin: -18px -16px 30px; background-position: 58% center; }
+    .wisehub-ems-features .features-hero__content { padding: 44px 28px; }
+    .wisehub-ems-features .features-hero__eyebrow { margin-bottom: 20px; padding: 8px 13px; font-size: 13px; }
+    .wisehub-ems-features .features-hero h1 { font-size: 44px; }
+    .wisehub-ems-features .features-hero__subtitle { margin-top: 20px; font-size: 21px; }
+    .wisehub-ems-features .features-hero__description { margin-top: 26px; font-size: 16px; }
     .wisehub-ems-features .ems-feature { grid-template-columns: 1fr; gap: 30px; padding: 24px; border-radius: 20px; }
     .wisehub-ems-features .feature-visual img { border-radius: 16px; }
     .wisehub-ems-features .feature-visual::before { margin-bottom: 13px; font-size: 27px; }
@@ -112,10 +120,12 @@
 
 <section class="wisehub-ems-features" aria-label="WISEHUB EMS 系統特色功能">
   <header class="features-hero">
-    <p class="features-hero__eyebrow">WISEHUB EMS</p>
-    <h1 data-page-title="ems-features">EMS 系統特色功能</h1>
-    <p class="features-hero__subtitle" data-page-subtitle="ems-decision">讓每一筆能源數據，成為更快、更準確的管理決策</p>
-    <p class="features-hero__description">從即時監控、異常預警、需量控制到能源績效改善，以 10 項核心功能，協助企業看清用能、降低風險，讓節能與永續管理落實在每天的營運現場。</p>
+    <div class="features-hero__content">
+      <p class="features-hero__eyebrow">WISEHUB EMS｜系統特色功能</p>
+      <h1 data-page-title="ems-features">從看見用能，到主動改善</h1>
+      <p class="features-hero__subtitle" data-page-subtitle="ems-decision">讓能源管理的每一步，都有數據依據。</p>
+      <p class="features-hero__description">從即時監控、異常預警、需量控制到能源績效管理，WISEHUB EMS 以 10 項核心功能，協助企業看清用能、降低風險，讓節能與永續管理落實在每天的營運現場。</p>
+    </div>
   </header>
   <article class="ems-feature feature-ai-assistant">
     <div class="feature-visual" data-title="AI 智慧助手"><img src="https://raw.githubusercontent.com/tradercodex66-sketch/public-images/main/codex-clipboard-03b129eb-900f-45f6-80fc-162e734856ab.png" alt="AI 智慧助手分析警報並提出處置建議"></div>
