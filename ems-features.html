@@ -11,6 +11,20 @@
     padding: 28px 32px 64px;
   }
   .wisehub-ems-features * { box-sizing: border-box; }
+  .wisehub-ems-features .features-hero {
+    max-width: 1440px;
+    margin: 0 auto clamp(24px, 3vw, 44px);
+    padding: clamp(42px, 5vw, 68px) clamp(24px, 6vw, 84px);
+    text-align: center;
+    border: 1px solid rgba(13, 110, 253, .14);
+    border-radius: 28px;
+    background: linear-gradient(135deg, rgba(255,255,255,.96), rgba(231,248,255,.92));
+    box-shadow: 0 18px 42px rgba(20, 92, 153, .08);
+  }
+  .wisehub-ems-features .features-hero__eyebrow { margin: 0 0 12px; color: #087ea4; font-size: 14px; font-weight: 800; letter-spacing: .14em; }
+  .wisehub-ems-features .features-hero h1 { display: block !important; margin: 0; color: var(--wh-ink); font-size: clamp(34px, 4.1vw, 56px); font-weight: 800; line-height: 1.22; letter-spacing: .02em; }
+  .wisehub-ems-features .features-hero__subtitle { margin: 18px auto 0; color: #087ea4; font-size: clamp(19px, 2vw, 26px); font-weight: 800; line-height: 1.55; }
+  .wisehub-ems-features .features-hero__description { max-width: 680px; margin: 18px auto 0; color: var(--wh-muted); font-size: 16px; line-height: 1.85; }
   .wisehub-ems-features .ems-feature {
     display: grid;
     grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
@@ -25,7 +39,7 @@
     box-shadow: 0 22px 52px rgba(20, 92, 153, .10);
   }
   .wisehub-ems-features .ems-feature + .ems-feature { margin-top: clamp(24px, 3vw, 44px); }
-  .wisehub-ems-features .ems-feature:nth-child(even) { background: rgba(235, 248, 255, .88); }
+  .wisehub-ems-features .ems-feature:nth-of-type(even) { background: rgba(235, 248, 255, .88); }
   .wisehub-ems-features .feature-visual {
     display: block !important;
     position: relative;
@@ -69,6 +83,16 @@
   .wisehub-ems-features .ems-feature:nth-child(9) .feature-kicker::after { content: "09 / 即時警報監控與多通路通知"; }
   .wisehub-ems-features .ems-feature:nth-child(10) .feature-kicker::after { content: "10 / 再生能源監控與綠電利用分析"; }
   .wisehub-ems-features .feature-kicker::before { content: ""; width: 34px; height: 2px; background: var(--wh-cyan); }
+  .wisehub-ems-features .ems-feature:nth-of-type(1) .feature-kicker::after { content: "01 / AI 智慧助手"; }
+  .wisehub-ems-features .ems-feature:nth-of-type(2) .feature-kicker::after { content: "02 / 需量預測與需量控制"; }
+  .wisehub-ems-features .ems-feature:nth-of-type(3) .feature-kicker::after { content: "03 / 自定義儀表板"; }
+  .wisehub-ems-features .ems-feature:nth-of-type(4) .feature-kicker::after { content: "04 / 虛擬設備與計算點位"; }
+  .wisehub-ems-features .ems-feature:nth-of-type(5) .feature-kicker::after { content: "05 / 三段式電費成本精算"; }
+  .wisehub-ems-features .ems-feature:nth-of-type(6) .feature-kicker::after { content: "06 / ISO 50001 與 EnPI 自訂能源績效指標"; }
+  .wisehub-ems-features .ems-feature:nth-of-type(7) .feature-kicker::after { content: "07 / 設備能效與全廠用電比例分析"; }
+  .wisehub-ems-features .ems-feature:nth-of-type(8) .feature-kicker::after { content: "08 / HA 高可用性備援系統"; }
+  .wisehub-ems-features .ems-feature:nth-of-type(9) .feature-kicker::after { content: "09 / 即時警報監控與多通路通知"; }
+  .wisehub-ems-features .ems-feature:nth-of-type(10) .feature-kicker::after { content: "10 / 再生能源監控與綠電利用分析"; }
   .wisehub-ems-features h2 { display: none !important; }
   .wisehub-ems-features .feature-lead { margin: 18px 0 0; color: #087ea4; font-size: clamp(18px, 1.45vw, 22px); font-weight: 800; line-height: 1.6; }
   .wisehub-ems-features .feature-copy { margin: 22px 0 0; color: var(--wh-muted); font-size: 16px; line-height: 1.9; }
@@ -79,6 +103,7 @@
   .wisehub-ems-features .feature-points strong { color: var(--wh-blue); }
   @media (max-width: 760px) {
     .wisehub-ems-features { padding: 18px 16px 40px; }
+    .wisehub-ems-features .features-hero { padding: 38px 22px; border-radius: 20px; }
     .wisehub-ems-features .ems-feature { grid-template-columns: 1fr; gap: 30px; padding: 24px; border-radius: 20px; }
     .wisehub-ems-features .feature-visual img { border-radius: 16px; }
     .wisehub-ems-features .feature-visual::before { margin-bottom: 13px; font-size: 27px; }
@@ -86,6 +111,12 @@
 </style>
 
 <section class="wisehub-ems-features" aria-label="WISEHUB EMS 系統特色功能">
+  <header class="features-hero">
+    <p class="features-hero__eyebrow">WISEHUB EMS</p>
+    <h1 data-page-title="ems-features">EMS 系統特色功能</h1>
+    <p class="features-hero__subtitle" data-page-subtitle="ems-decision">讓每一筆能源數據，成為更快、更準確的管理決策</p>
+    <p class="features-hero__description">從即時監控、異常預警、需量控制到能源績效改善，以 10 項核心功能，協助企業看清用能、降低風險，讓節能與永續管理落實在每天的營運現場。</p>
+  </header>
   <article class="ems-feature feature-ai-assistant">
     <div class="feature-visual" data-title="AI 智慧助手"><img src="https://raw.githubusercontent.com/tradercodex66-sketch/public-images/main/codex-clipboard-03b129eb-900f-45f6-80fc-162e734856ab.png" alt="AI 智慧助手分析警報並提出處置建議"></div>
     <div class="feature-content"><p class="feature-kicker">01 / INTELLIGENT RESPONSE</p><h2>AI 智慧助手｜讓每一次警報，都有下一步</h2><p class="feature-lead">不只是通知異常，更協助團隊找到原因與處置方向。</p><div class="feature-copy"><p>凌晨 2:17，冰水主機的需量突然攀升，控制室跳出警報。以往，值班人員得在多張趨勢圖、設備紀錄與現場狀況之間反覆比對；現在，WISEHUB EMS 的 AI 智慧助手會即時讀取警報脈絡，找出可能原因，並把優先處置建議直接帶到眼前。</p><p>它不只是通知「哪裡異常」，更協助回答「為什麼發生」與「下一步該怎麼做」，讓團隊在關鍵時刻更快做出正確決策。</p></div><ul class="feature-points"><li><strong>即時解析：</strong>串聯警報、歷史趨勢與設備狀態，快速縮小可能原因。</li><li><strong>行動建議：</strong>依異常情境提供優先檢查項目與改善方向。</li><li><strong>經驗累積：</strong>將每一次處置轉化為可追溯的管理知識，降低人員交接與判讀門檻。</li></ul></div>
